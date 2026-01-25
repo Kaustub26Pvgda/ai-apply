@@ -1,0 +1,3 @@
+fastapi
+uvicorn
+agno # Add the correct package name for Agno if available

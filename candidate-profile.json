@@ -1,0 +1,320 @@
+{
+  "identity": {
+    "full_name": "Pavagada Mathuranath Kaustub",
+    "preferred_name": "Kaustub Pavagada",
+    "email": "kaustubpm@gmail.com",
+    "phone": "+91 7899168638",
+    "country_of_residence": "India",
+    "city": "Bangalore",
+    "linkedin_url": "https://www.linkedin.com/in/kaustub-pavagada-600336257/",
+    "github_url": "https://github.com/Kaustub26Pvgda",
+    "leetcode_url": "https://leetcode.com/u/KaustubPM/",
+    "codeforces_url": "https://codeforces.com/profile/pmk26",
+    "portfolio_url": ""
+  },
+  "education": [
+    {
+      "level": "Bachelor",
+      "degree": "Bachelor of Technology (B.Tech)",
+      "field": "Computer Science and Engineering",
+      "university": "National Institute of Technology, Puducherry",
+      "location": "Puducherry, India",
+      "start_date": "November 2022",
+      "end_date": "May 2026",
+      "cgpa": "9.06"
+    },
+    {
+      "level": "12th Standard",
+      "degree": "",
+      "field": "",
+      "university": "Sri Kumaran Children's Home Composite Junior College",
+      "location": "Bangalore, India",
+      "start_date": "August 2020",
+      "end_date": "April 2022",
+      "cgpa": "9.7"
+    },
+    {
+      "level": "10th Standard",
+      "degree": "",
+      "field": "",
+      "university": "Sudarshan Vidya Mandir ICSE",
+      "location": "Bangalore, India",
+      "start_date": "",
+      "end_date": "April 2020",
+      "cgpa": "9.65"
+    }
+  ],
+  "work_authorization": {
+    "country": "India",
+    "authorized_to_work": true,
+    "requires_sponsorship": false,
+    "visa_type": "",
+    "open_to_relocation": true
+  },
+  "professional_summary": {
+    "short": "",
+    "long": ""
+  },
+  "skills": {
+    "programming_languages": {
+      "Python": "advanced",
+      "C++": "intermediate",
+      "JavaScript": "advanced",
+      "Rust": "intermediate",
+      "Dart": "intermediate"
+    },
+    "frameworks": {
+      "FastAPI": "advanced",
+      "React.js": "advanced",
+      "Next.js": "advanced",
+      "Flutter": "intermediate",
+      "React Native": "beginner"
+    },
+    "databases": {
+      "MongoDB": "advanced",
+      "Neo4j": "intermediate",
+      "MySQL": "advanced"
+    },
+    "tools": {
+      "Git": "advanced",
+      "Docker": "intermediate",
+      "Figma": "intermediate"
+    },
+    "cloud": {
+      "Vercel": "beginner",
+      "AWS": "beginner"
+    },
+    "ai_ml": {
+      "TensorFlow": "beginner",
+      "Keras": "beginner",
+      "scikit-learn": "beginner",
+      "OpenCV": "beginner"
+    },
+    "other": [
+      "Photography",
+      "Videography",
+      "Adobe Photoshop",
+      "Adobe Premiere Pro",
+      "Adobe Lightroom"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Patient-Centric Medical Record Management Solution",
+      "description": [
+        "Designed and developed a patient-centric digital medical records management system that consolidates diagnoses, prescriptions, laboratory reports, and appointment history into a unified platform controlled by the patient.",
+        "Implemented role-based access control to allow patients to grant time-limited access to doctors during active appointments while preserving data ownership and privacy."
+      ],
+      "problem_solved": "Traditional healthcare systems store medical records across fragmented institutional silos, limiting patient access, continuity of care, and standardized data exchange. This project addresses fragmented records, redundant diagnostics, and lack of patient data ownership by providing a secure, unified, and consent-driven medical record platform.",
+      "your_role": "Full-stack developer responsible for system design, frontend and backend implementation, data modeling, validation, and security enforcement.",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Firebase Firestore",
+        "Firebase Authentication",
+        "Zod"
+      ],
+      "skills": [
+        "Full-stack development",
+        "Role-based access control (RBAC)",
+        "Schema-based data validation",
+        "Cloud-based application design",
+        "Healthcare data modeling",
+        "Secure authentication and authorization"
+      ],
+      "impact": "Delivered a functional prototype demonstrating secure patient-owned medical records with standardized diagnosis entry, real-time data synchronization, and strong access control, suitable for academic demonstration and extensible toward real-world EHR systems.",
+      "tags": ["frontend", "backend", "full-stack", "development", "healthcare", "firebase", "rbac", "cloud"]
+    },
+    {
+      "title": "LLM Document Analyzer",
+      "description": [
+        "Developed a full-stack web application that enables users to upload PDF documents and analyze their contents using a LLM for intelligent document classification and insight extraction.",
+        "Created a FastAPI backend to handle file uploads, extract text from PDFs using pypdf, integrate with the Gemini LLM API for context-aware analysis, and compute confidence metrics for classification results.",
+        "Built a responsive React frontend with a drag-and-drop PDF upload interface, history view with pagination, and detailed document views showing extracted text, detected document types, and missing field recommendations."
+      ],
+      "problem_solved": "Traditional document analysis tools lack easy ways to extract semantic meaning and insights from unstructured PDFs. This application solves that problem by allowing users to upload documents and receive automated classification, text extraction, and insight summaries using modern LLMs, improving efficiency and accessibility of document understanding.",
+      "your_role": "Full-stack developer responsible for end-to-end implementation of both frontend and backend, LLM integration, data storage, and user interface design.",
+      "technologies": [
+        "FastAPI",
+        "SQLAlchemy",
+        "SQLite",
+        "React (Vite + TypeScript)",
+        "CSS Modules",
+        "pypdf",
+        "Python",
+        "Google Generative AI (Gemini LLM)",
+        "React Router Dom"
+      ],
+      "skills": [
+        "Full-stack web application development",
+        "LLM integration and API usage",
+        "Document text extraction",
+        "REST API design",
+        "State management in React",
+        "Database design and persistence",
+        "UI/UX implementation and frontend routing"
+      ],
+      "impact": "Delivered a working prototype that enables semantic document analysis via uploaded PDFs, allowing users to classify documents, view extracted text content, and access detailed insights through a modern UI, demonstrating capabilities suitable for AI-augmented document workflows.",
+      "links": [
+        "https://github.com/Kaustub26Pvgda/llm-doc-analyzer"
+      ],
+      "tags": ["full-stack", "llm", "fastapi", "react", "document-analysis"]
+    },
+    {
+      "title": "Movie Discovery & Watchlist React Native App",
+      "description": [
+        "Built a cross-platform mobile application using React Native that enables users to browse trending movies, view detailed metadata, search for films by name, and maintain a personalized watchlist.",
+        "Integrated The Movie Database (TMDb) API to fetch live movie data including titles, posters, genres, ratings, and overviews, ensuring up-to-date content for users.",
+        "Implemented smooth navigation using React Navigation, developed interactive UI components for movie lists, search interfaces, and a persistent watchlist stored locally on the device, and handled offline data persistence."
+      ],
+      "problem_solved": "Existing movie browsing apps and demo projects often lack a cohesive, interactive experience for discovering and saving movies in a mobile environment. This project solves that by offering real-time movie discovery, search, and a personalized watchlist with native mobile performance.",
+      "your_role": "Full-stack mobile developer responsible for end-to-end implementation of UI screens, API integration, navigation flow, data persistence, and performance optimization across Android and iOS.",
+      "technologies": [
+        "React Native",
+        "Expo",
+        "JavaScript",
+        "React Navigation",
+        "TMDb API",
+        "AsyncStorage",
+        "REST APIs"
+      ],
+      "skills": [
+        "Cross-platform mobile app development",
+        "API integration",
+        "State management",
+        "Mobile navigation patterns",
+        "Local data persistence",
+        "UI/UX component design"
+      ],
+      "impact": "Delivered a functional and responsive mobile app that allows users to discover movies, search by name, view rich metadata, and manage a personalized watchlist, showcasing an end-to-end React Native project suitable for app store deployment or portfolio demonstration.",
+      "links": [
+        "https://github.com/Kaustub26Pvgda/movie-app-react-native"
+      ],
+      "tags": ["mobile", "react-native", "expo", "API", "app-dev"]
+    }
+  ],
+  "research_papers": [
+    {
+      "title": "Machine Learning-Driven Intrusion Detection for SDN Networks",
+      "authors": [
+        "Pavagada Mathuranath Kaustub",
+        "Aswin Valsaraj",
+        "Ashwin Santhosh",
+        "D Sendil Vadivu"
+      ],
+      "conference_journal": "SN Computer Science (Springer)",
+      "year": "2025",
+      "doi_or_link": "https://link.springer.com/epdf/10.1007/s42979-025-03930-5?sharing_token=QqJp3JH-m1i-pH_y_dK0ave4RwlQNchNByi7wbcMAY7kCPThVO3e35XW6c1FigDRY9qUK25SXCG0EYFKqm_kgiAcnUwQdauQY7BsdJzFnECPq60bmwpaSN3KaEpJhweZPBAoU50N8WDNCp8laHOOecYEquioRvcmAN6BKxckB4s%3D",
+      "abstract_summary": "This research presents a machine learning-based intrusion detection system tailored for Software Defined Networking (SDN). The work evaluates multiple ML models for traffic classification, optimizes detection accuracy, and demonstrates improved identification of network threats in SDN environments.",
+      "problem_solved": "Traditional intrusion detection approaches in SDN struggle with dynamic traffic and emerging threats. The research addresses this by leveraging supervised machine learning techniques to increase detection accuracy, reduce false positives, and adapt to evolving network behavior in SDN topologies.",
+      "your_role": "Primary researcher and developer responsible for dataset preprocessing, feature engineering, model selection and evaluation, implementation of classifier pipelines, and writing and publication of the paper.",
+      "methods_and_technologies": [
+        "Software Defined Networking (SDN)",
+        "Machine Learning Classification",
+        "Scikit-learn",
+        "PCAP Dataset Processing",
+        "Feature Engineering",
+        "Model Evaluation Metrics (Accuracy, Precision, Recall)",
+        "Python"
+      ],
+      "key_findings": [
+        "Evaluated and compared multiple supervised ML models for intrusion detection in SDN traffic.",
+        "Identified models that balance classification accuracy and computational efficiency.",
+        "Demonstrated superior detection performance compared to baseline methods on benchmark SDN traffic datasets."
+      ],
+      "impact": "Published in a peer-reviewed journal, this work contributes empirical evidence on the effectiveness of ML-driven intrusion detection in SDN, providing a foundation for future research and practical deployment of adaptive security solutions.",
+      "links": [
+        "https://link.springer.com/article/10.1007/s42979-025-03930-5",
+        "https://github.com/Kaustub26Pvgda/sdn-ml-ids"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "organization": "SkillRank",
+      "role": "Software Development Engineer Intern",
+      "location": "Remote",
+      "employment_type": "Full-time Internship",
+      "start_date": "January 2026",
+      "end_date": "",
+      "responsibilities": [
+        "Analyzed and refactored a legacy MongoDB cost-tracking schema into a scalable, event-driven aggregate model, eliminating document size limits and enabling efficient multi-tenant analytics.",
+        "Analyzed and processed multi-million-row utility customer datasets (17GB+) using SQL and Python to support predictive analytics and targeted marketing initiatives."
+      ],
+      "impact": "Prevented crashing of the application due to large document sizes, ensuring smooth operation and scalability for future growth."
+    },
+    {
+      "organization": "IIT Madras",
+      "role": "Research Intern",
+      "location": "Chennai",
+      "employment_type": "Full-time Internship",
+      "start_date": "May 2025",
+      "end_date": "July 2025",
+      "responsibilities": [
+        "Undertook a 4-week study on Fourier analysis of boolean functions and theory of decision trees.",
+        "Performed Fourier-based theoretical analysis of two decision tree papers, presenting novel analytical perspectives."
+      ]
+    },
+    {
+      "organization": "Aclogica Solutions Pvt. Ltd.",
+      "role": "Software Development Engineer Intern",
+      "location": "Remote",
+      "employment_type": "Part-time Internship",
+      "start_date": "August 2024",
+      "end_date": "April 2025",
+      "responsibilities": [
+        "Implemented a scalable Rust module to generate 8 XML and CSV reports from querying on a database with over 30,000 records, with efficient serialization, validation, and dynamic format selection.",
+        "Revamped API logic to move client-side filtering of 20,000 records to the ASP.NET backend, reducing search time by 86% and eliminating UI latency."
+      ],
+      "impact": "Improved report generation speed and user experience, leading to higher client satisfaction and operational efficiency."
+    }
+  ],
+  "achievements": [
+    "Recognized by Resonance-BASE for securing 98.5 percentile in JEE Mains 2022",
+    "President of the Coding Club at NIT Puducherry for 2024-25; organized multiple coding competitions and hackathons",
+    "Captained the NIT Puducherry Football Team for the 2025 season",
+    "Organized and coordinated multiple technical and cultural fests and workshops at NIT Puducherry",
+    "Valedictorian of Sudarshan Vidya Mandir ICSE Academy; awarded for outstanding leadership"
+  ],
+  "preferences": {
+    "roles_interested_in": ["Software Development Engineer", "Backend Developer", "Machine Learning Engineer"],
+    "locations_preferred": ["Bangalore, India", "Remote"],
+    "salary_expectation": "16+ LPA",
+    "job_type": ["Full-time", "Internship"]
+  },
+  "previous_work_ctc": "6 LPA",
+  "total_work_exp": "9 months",
+  "application_answers": {
+    "why_this_role": "",
+    "why_this_company": "",
+    "strengths": "",
+    "weaknesses": "",
+    "most_proud_project": "",
+    "challenge_faced": ""
+  },
+  "availability": {
+    "earliest_start_date": "April 2026",
+    "notice_period": "1 month",
+    "internship_duration": ""
+  },
+  "declarations": {
+    "information_accurate": true,
+    "agree_to_background_check": true,
+    "agree_to_terms": true
+  },
+  "meta": {
+    "last_updated": "23-01-2026",
+    "confidence_level": "high",
+    "fields_do_not_modify": ["name", "email", "phone", "education"]
+  },
+
+
+
+  "resume_metadata": {
+    "max_pages": 1,
+    "preferred_bullet_length": "concise",
+    "emphasis_priority": ["experience", "projects"],
+    "include_research_by_default": true
+  }
+}
