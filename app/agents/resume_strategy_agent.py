@@ -1,5 +1,7 @@
 # Resume Strategy Agent using Agno
 from agno.agent import Agent
+import logging
+from app.schemas.strategy_schema import ResumeStrategy
 
 RESUME_STRATEGY_PROMPT = """
 You are a resume strategy planner.
@@ -36,11 +38,21 @@ If there are any other relevant fields that you think should be added then add t
 """
 
 class ResumeStrategyAgent:
-		def __init__(self):
-				self.agent = Agent(system_prompt=RESUME_STRATEGY_PROMPT)
+	def __init__(self):
+		self.agent = Agent(system_prompt=RESUME_STRATEGY_PROMPT)
 
-		def plan(self, job_description):
-				return self.agent.run({"job_description": job_description})
+
+	def plan(self, job_description):
+		try:
+			result = self.agent.run({"job_description": job_description})
+			if not isinstance(result, dict):
+				raise ValueError("ResumeStrategyAgent: Output is not a dict.")
+			# Validate with schema
+			strategy_obj = ResumeStrategy(**result)
+			return strategy_obj.model_dump()
+		except Exception as e:
+			logging.error(f"ResumeStrategyAgent error: {e}")
+			raise RuntimeError(f"Resume strategy planning failed: {e}")
 
 def plan_resume_strategy(jd_object):
-		return ResumeStrategyAgent().plan(jd_object)
+	return ResumeStrategyAgent().plan(jd_object)

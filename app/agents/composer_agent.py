@@ -1,5 +1,8 @@
 # Resume Composer Agent using Agno
+import json
 from agno.agent import Agent
+import logging
+from app.schemas.resume_schema import ResumeContent
 
 COMPOSER_AGENT_PROMPT = """
 You are a resume composer.
@@ -35,11 +38,30 @@ If there are any other relevant fields that you think should be added then add t
 """
 
 class ResumeComposerAgent:
-		def __init__(self):
-				self.agent = Agent(system_prompt=COMPOSER_AGENT_PROMPT)
+    def __init__(self):
+        self.agent = Agent(
+            system_prompt=COMPOSER_AGENT_PROMPT,
+            response_model=ResumeContent
+        )
 
-		def compose(self, candidate_profile, resume_strategy):
-				return self.agent.run({"candidate_profile": candidate_profile, "resume_strategy": resume_strategy})
 
-def compose_resume(candidate_profile, resume_strategy):
-		return ResumeComposerAgent().compose(candidate_profile, resume_strategy)
+    def compose(self, candidate_profile, resume_strategy):
+        user_message = f"""
+Generate resume content using the following:
+
+CANDIDATE PROFILE:
+{json.dumps(candidate_profile, indent=2)}
+
+RESUME STRATEGY:
+{json.dumps(resume_strategy, indent=2)}
+
+Return only valid JSON matching the schema specified in your instructions.
+"""
+        try:
+            response = self.agent.run(user_message)
+            resume_data = json.loads(response) if isinstance(response, str) else response
+            resume_obj = ResumeContent(**resume_data)
+            return resume_obj.model_dump()
+        except Exception as e:
+            logging.error(f"ResumeComposerAgent error: {e}")
+            raise RuntimeError(f"Resume composition failed: {e}")
